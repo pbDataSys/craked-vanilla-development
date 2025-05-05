@@ -1,0 +1,527 @@
+body {
+      background-color: #1a202c; /* Tailwind's gray-900 */
+      color: white;
+      min-height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    nav {
+      background-color: #2d3748; /* gray-800 */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .nav-container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      height: 4rem;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .logo i {
+      color: #63b3ed; /* blue-400 */
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+
+    .minecraft-font {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #63b3ed;
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .nav-link {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      color: white;
+      transition: background-color 0.2s ease;
+    }
+
+    .nav-link:hover {
+      background-color: #4a5568; /* gray-700 */
+    }
+
+    .join-btn {
+      background-color: #3182ce; /* blue-600 */
+    }
+
+    .join-btn:hover {
+      background-color: #2b6cb0; /* blue-700 */
+    }
+
+    .mobile-button {
+      display: flex;
+      padding: 0.5rem;
+      border-radius: 0.375rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .mobile-button:hover {
+      background-color: #4a5568;
+    }
+
+    .mobile-menu {
+      display: none;
+      background-color: #2d3748;
+    }
+
+    .mobile-menu a {
+      display: block;
+      padding: 0.5rem 0.75rem;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .mobile-menu a:hover {
+      background-color: #4a5568;
+    }
+
+    @media (min-width: 768px) {
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .mobile-button {
+        display: none;
+      }
+
+      .mobile-menu {
+        display: none !important;
+      }
+    }
+
+     .hero-gradient {
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: linear-gradient(to bottom, #1f2937, #111827);
+  }
+
+  .minecraft-font {
+    font-family: 'Minecraftia', sans-serif; /* replace with your actual font if needed */
+  }
+
+  .section-container {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .hero-heading {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: white;
+  }
+
+  @media (min-width: 768px) {
+    .hero-heading {
+      font-size: 3.75rem;
+    }
+
+    .hero-paragraph {
+      font-size: 1.25rem;
+    }
+  }
+
+  .hero-highlight {
+    color: #facc15;
+  }
+
+  .hero-paragraph {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    color: #f3f4f6;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 640px) {
+    .hero-buttons {
+      flex-direction: row;
+    }
+  }
+
+  .btn-yellow {
+    background-color: #facc15;
+    color: #1f2937;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .btn-yellow:hover {
+    background-color: #fbbf24;
+  }
+
+  .btn-white {
+    background-color: white;
+    color: #1f2937;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .btn-white:hover {
+    background-color: #e5e7eb;
+  }
+
+  #about {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #1f2937;
+  }
+
+  .about-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #60a5fa;
+  }
+
+  @media (min-width: 768px) {
+    .about-heading {
+      font-size: 2.25rem;
+    }
+  }
+
+  .server-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .server-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .server-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    transition: background-color 0.3s;
+  }
+
+  .server-card:hover {
+    background-color: #374151;
+  }
+
+  .server-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+  }
+
+  .card-text {
+    color: #d1d5db;
+  }
+
+  .features-box {
+    margin-top: 4rem;
+    background-color: #374151;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+
+  .features-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #facc15;
+  }
+
+  .feature-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .feature-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .feature-icon {
+    color: #34d399;
+    margin-right: 1rem;
+    margin-top: 0.25rem;
+  }
+
+  .feature-heading {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+
+  .feature-text {
+    color: #d1d5db;
+  }
+  
+
+  .minecraft-font {
+    font-family: 'Minecraftia', sans-serif; /* Placeholder */
+  }
+
+  .staff-section,
+  .ranks-section {
+    background-color: #1f2937;
+  }
+
+  .ranks-section {
+    background-color: #1e293b;
+  }
+
+  .container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .text-purple-400 {
+    color: #c084fc;
+  }
+
+  .text-yellow-300 {
+    color: #fde68a;
+  }
+
+  .staff-grid,
+  .ranks-grid {
+    display: grid;
+    gap: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .staff-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ranks-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .ranks-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .staff-card,
+  .rank-card {
+    background-color: #1f2937;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+
+  .icon-circle {
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-inner {
+    background-color: #1f2937;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-red-400 {
+    color: #f87171;
+  }
+
+  .text-blue-400 {
+    color: #60a5fa;
+  }
+
+  .text-green-400 {
+    color: #4ade80;
+  }
+
+  .text-amber-400 {
+    color: #fbbf24;
+  }
+
+  .text-pink-400 {
+    color: #f9a8d4;
+  }
+
+  .text-emerald-400 {
+    color: #34d399;
+  }
+
+  .text-cyan-400 {
+    color: #22d3ee;
+  }
+
+  .text-purple-400 {
+    color: #c084fc;
+  }
+
+  .bg-gray-800 {
+    background-color: #1f2937;
+  }
+
+  .bg-gray-700 {
+    background-color: #374151;
+  }
+
+  .text-gray-300 {
+    color: #d1d5db;
+  }
+
+  .badge {
+    background-color: #374151;
+    color: inherit;
+    font-weight: bold;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  .rank-card h3 {
+    margin: 0;
+  }
+
+  .rank-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .rank-card li {
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .gradient-red {
+    background: linear-gradient(to bottom right, #ef4444, #ec4899);
+  }
+
+  .gradient-blue {
+    background: linear-gradient(to bottom right, #3b82f6, #22d3ee);
+  }
+
+  .gradient-green {
+    background: linear-gradient(to bottom right, #22c55e, #10b981);
+  }
+
+  .gradient-yellow {
+    background: linear-gradient(to bottom right, #f59e0b, #fcd34d);
+  }
+
+  .gradient-cyan {
+    background: linear-gradient(to bottom right, #06b6d4, #93c5fd);
+  }
+
+  .gradient-pink {
+    background: linear-gradient(to bottom right, #ec4899, #e9d5ff);
+  }
+
+  .gradient-emerald {
+    background: linear-gradient(to bottom right, #10b981, #86efac);
+  }
+
+  .gradient-lime {
+    background: linear-gradient(to bottom right, #22c55e, #bef264);
+  }
+
+  .gradient-indigo {
+    background: linear-gradient(to bottom right, #8b5cf6, #c4b5fd);
+  }
+
+  .rank-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+  }
+
+  .rank-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .rank-card p {
+    margin-bottom: 1rem;
+  }
