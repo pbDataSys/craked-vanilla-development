@@ -1,0 +1,15 @@
+body{
+    margin: 1em auto;
+    padding: 1em;
+    max-width: 600px;
+    font-family: 'Monospace', monospace;
+    background-color: rgb(17 24 39 );
+    color: #ffffff;
+}
+body span{
+color: rgb(96 165 250 )
+}
+
+.jake-to-do{
+    color: gold;
+}

@@ -1,50 +1,62 @@
- @import url('https://fonts.googleapis.com/css2?family=Minecraft&display=swap');
-        
-        .minecraft-font {
-            font-family: 'Minecraft', sans-serif;
-        }
-        
-        .hero-gradient {
-            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
-        }
-        
-        .server-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .staff-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
-        
-        .pixel-border {
-            border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M0 0h4v4H0zM4 4h4v4H4z' fill='%23ffffff'/%3E%3C/svg%3E") 2;
-            border-image-repeat: round;
-            border-image-slice: 2;
-        }
-        
-        .rank-card {
-            background: linear-gradient(145deg, #1f2937, #111827);
-            transition: all 0.3s ease;
-        }
-        
-        .rank-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        }
-        
-        .vip-gradient {
-            background: linear-gradient(135deg, #f59e0b 0%, #f97316 50%, #ef4444 100%);
-        }
-        
-        .vip-card {
-            background: linear-gradient(145deg, #2e1b0e, #1a120b);
-            border: 1px solid #f59e0b;
-        }
-        
-        .team-buff {
-            background: linear-gradient(145deg, #0e2e1b, #0b1a12);
-            border: 1px solid #10b981;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Minecraft&display=swap');
+
+.minecraft-font {
+  font-family: 'Minecraft', sans-serif;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+}
+
+.server-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.staff-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.pixel-border {
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M0 0h4v4H0zM4 4h4v4H4z' fill='%23ffffff'/%3E%3C/svg%3E")
+    2;
+  border-image-repeat: round;
+  border-image-slice: 2;
+}
+
+.rank-card {
+  background: linear-gradient(145deg, #1f2937, #111827);
+  transition: all 0.3s ease;
+}
+
+.rank-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.vip-gradient {
+  background: linear-gradient(135deg, #f59e0b 0%, #f97316 50%, #ef4444 100%);
+}
+
+.vip-card {
+  background: linear-gradient(145deg, #2e1b0e, #1a120b);
+  border: 1px solid #f59e0b;
+}
+
+.team-buff {
+  background: linear-gradient(145deg, #0e2e1b, #0b1a12);
+  border: 1px solid #10b981;
+}
+
+.legal-list {
+  margin-top: 1em;
+}
+.legal-list li a {
+  color: gold;
+}
+
+.jake-to-do {
+  color: gold;
+}
