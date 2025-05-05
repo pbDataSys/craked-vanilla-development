@@ -14,11 +14,13 @@ color: rgb(96 165 250 )
     color: gold;
 }
 
+
 .place-holder{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: auto;
     border-radius: 10px;
     border: 4px solid gold;
